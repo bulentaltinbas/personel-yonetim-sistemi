@@ -1,16 +1,19 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { getAuth } from "firebase/auth";
+//import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_AUTH_DOMAIN",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_STORAGE_BUCKET",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyC03sZEqGGlxdN8coCqyEuK5wIjDawJi_0",
+  authDomain: "personeltakipsistemi-7d2f3.firebaseapp.com",
+  projectId: "personeltakipsistemi-7d2f3",
+  storageBucket: "personeltakipsistemi-7d2f3.firebasestorage.app",
+  messagingSenderId: "855721389714",
+  appId: "1:855721389714:web:c11bf83c1bcba12529804b",
+  measurementId: "G-GL6HT4N5Q9"
 };
 
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
 export const auth = getAuth(app);
